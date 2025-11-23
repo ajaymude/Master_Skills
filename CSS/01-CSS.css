@@ -1,0 +1,351 @@
+
+/* text css  */
+
+p{
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-indent: 20px;
+    text-overflow: ellipsis;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-wrap: wrap;
+    text-decoration-color: blue;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 2px;
+    text-decoration-line: underline;
+    text-decoration-skip: none;
+    text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: none;
+    text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: none;
+    text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: none;
+    text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: none;
+    text-decoration-skip-ink: auto;
+
+    letter-spacing: 2px;
+    line-height: 1.5;
+    word-spacing: 2px;
+    text-align: justify;
+    text-align-last: center;
+    text-align-last: center;
+    text-align-last: center;
+
+
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-indent: 20px;
+    text-overflow: ellipsis;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-wrap: wrap;
+    text-decoration-color: blue;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 2px;
+    text-decoration-line: underline;
+    text-decoration-skip: none;
+    text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: none;
+    text-decoration-skip-ink: auto;
+
+
+    /* border  */
+    border: 1px solid red;
+    border-radius: 10px;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-image: url('border.png') 10;
+    border-image-source: url('border.png');
+    border-image-slice: 10;
+    border-image-width: 10;
+    border-image-outset: 10;
+    border-image-repeat: repeat;
+    border-image-repeat: space;
+    border-image-repeat: round;
+    border-image-repeat: stretch;
+    border-image-repeat: repeat-x;
+    border-image-repeat: repeat-y;
+    border-image-repeat: repeat-x;
+    border-image-repeat: repeat-y;
+    border-image-repeat: repeat-x;
+
+
+    /* background  */
+    background-color: red;
+    background-image: url('background.png');
+    background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    background-repeat: space;
+    background-repeat: round;
+    background-repeat: stretch;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-position: top;
+    background-position: bottom;
+    background-position: left;
+    background-position: right;
+    background-position: center;
+    background-position: top;
+    background-position: bottom;
+    background-position: left;
+    background-position: right;
+    background-size: cover;
+    background-size: contain;
+    background-size: auto;
+    background-size: 100%;
+   
+    /* margin  */
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+    /* padding  */
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+
+    /* display  */
+    display: block;
+    display: inline;
+    display: inline-block;
+    display: flex;
+    display: grid;
+    display: inline-flex;
+    display: inline-grid;
+
+
+    /* position  */
+    position: static;
+    position: relative;
+    position: absolute;
+    position: fixed;
+
+
+    /* float  */
+    float: left;
+    float: right;
+    float: none;
+    float: inline-start;
+    float: inline-end;
+    float: block;
+    float: inline;
+    float: inline-block;
+
+    /* clear  */
+    clear: left;
+    clear: right;
+    clear: both;
+    clear: inline-start;
+    clear: inline-end;
+    clear: block;
+    clear: inline;
+    clear: inline-block;
+
+
+    /* overflow  */
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+
+
+    /* visibility  */
+    visibility: visible;
+    visibility: hidden;
+    visibility: collapse;
+    visibility: inherit;
+    visibility: initial;
+    visibility: unset;
+    visibility: visible;
+    visibility: hidden;
+
+
+
+    /* z-index  */
+    z-index: 1;
+    z-index: 2;
+    z-index: 3;
+    z-index: 4;
+    z-index: 5;
+    z-index: 6;
+    z-index: 7;
+    z-index: 8;
+
+
+
+    /* animation  */
+    animation-name: animation-name;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-play-state: paused;
+    animation-play-state: running;
+    animation-play-state: paused;
+
+    /* transform  */
+    transform: translate(10px, 10px);
+    transform: rotate(10deg);
+    transform: scale(1.5);
+    transform: skew(10deg, 10deg);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: perspective(100px);
+    transform: perspective(100px);
+
+
+    /* transition  */
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+
+    /* box-shadow  */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+
+    /* user-select  */
+    user-select: none;
+    user-select: text;
+    user-select: all;
+    user-select: auto;
+    user-select: none;
+    user-select: text;
+    user-select: all;
+    user-select: auto;
+
+
+    /* cursor  */
+    cursor: pointer;
+    cursor: wait;
+    cursor: move;
+    cursor: not-allowed;
+    cursor: none;
+    cursor: default;
+    cursor: auto;
+    cursor: none;
+
+
+
+    /* outline  */
+    outline: 1px solid red;
+    outline-offset: 10px;
+    outline-offset: 10px;
+
+    /* filter  */
+    filter: blur(10px);
+    filter: brightness(100%);
+    filter: contrast(100%);
+    filter: grayscale(100%);
+    filter: hue-rotate(100deg);
+    filter: invert(100%);
+    filter: saturate(100%);
+    filter: sepia(100%);
+    filter: blur(10px);
+    filter: brightness(100%);
+    filter: contrast(100%);
+    filter: grayscale(100%);
+    filter: hue-rotate(100deg);
+    filter: invert(100%);
+    filter: saturate(100%);
+    filter: sepia(100%);
+
+
+    /* backdrop-filter  */
+    backdrop-filter: blur(10px);
+    backdrop-filter: brightness(100%);
+    backdrop-filter: contrast(100%);
+    backdrop-filter: grayscale(100%);
+    backdrop-filter: hue-rotate(100deg);
+    backdrop-filter: invert(100%);
+    backdrop-filter: saturate(100%);
+    backdrop-filter: sepia(100%);
+    backdrop-filter: blur(10px);
+    backdrop-filter: brightness(100%);
+    backdrop-filter: contrast(100%);
+    backdrop-filter: grayscale(100%);
+    backdrop-filter: hue-rotate(100deg);
+    backdrop-filter: invert(100%);
+    backdrop-filter: saturate(100%);
+    backdrop-filter: sepia(100%);
+
+
+
+
+
+    /* clip-path  */
+    clip-path: circle(50% at 50% 50%);
+    clip-path: ellipse(50% 50% at 50% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: path('M 0 0 L 100 0 L 100 100 L 0 100 Z');
+    clip-path: url('clip-path.svg');
+    clip-path: inset(10px 10px 10px 10px);
+    clip-path: inset(10px 10px 10px 10px);
+
+
+
+    /* clip-rule  */
+    clip-rule: evenodd;
+    clip-rule: nonzero;
+    clip-rule: inherit;
+    clip-rule: initial;
+    clip-rule: unset;
+    clip-rule: evenodd;
+    clip-rule: nonzero;
+    clip-rule: inherit;
+
+
+
+    /* mask  */
+    mask: url('mask.svg');
+    mask: url('mask.svg');
+
+    
+
+
+
+
+}
