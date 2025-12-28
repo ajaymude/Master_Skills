@@ -1,9 +1,25 @@
 // array , object , string , number , math , 
 
-
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 // array methods 
 
-const arr = [ 1 , 3, 3, 3,4 ,5, 9]
+const arr = [1, 3, 3, 3, 4, 5, 9]
+
+const arr2 = new Array(1, 3, 3, 3, 4, 5, 9);
+
+// access the value of array
+console.log(arr[0]);
+console.log(arr2[1]);
+
+
+// length of array
+console.log(arr.length);
+console.log(arr2.length);
+// last element of array
+console.log(arr2[arr.length - 1]);
+
 
 // for loop example
 for (let i = 0; i < arr.length; i++) {
@@ -14,7 +30,7 @@ for (let i = 0; i < arr.length; i++) {
 
 // for in loop example
 for (let i in arr) {
-  console.log(arr[i] , 'index' , i);  
+  console.log(arr[i], 'index', i);
 }
 // output: 1 3 3 3 4 5 9
 
@@ -129,7 +145,7 @@ console.log(arr);
 arr.findIndex(element => {
   return element > 5;
 });
-console.log(arr);   
+console.log(arr);
 // output: 3
 
 
@@ -185,6 +201,11 @@ console.log(arr);
 
 
 
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 
 // object methods 
 const obj = {
@@ -289,7 +310,7 @@ console.log(obj);
 
 // 18 isString method example   // return true if the object is a string  
 Object.isString(obj); // return true if the object is a string  
-console.log(obj);   
+console.log(obj);
 // output: true
 
 // 19 isNumber method example   // return true if the object is a number  
@@ -303,7 +324,83 @@ console.log(obj);
 // output: true
 
 
+// 21 isSymbol method example   // return true if the object is a symbol  
+Object.isSymbol(obj); // return true if the object is a symbol  
+console.log(obj);
+// output: true
+
+// 22 isBigInt method example   // return true if the object is a big int  
+Object.isBigInt(obj); // return true if the object is a big int  
+console.log(obj);
+// output: true
+
+// 23 isUndefined method example   // return true if the object is undefined  
+Object.isUndefined(obj); // return true if the object is undefined  
+console.log(obj);
+// output: true
 
 
 
 
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+// math methods 
+
+// 1 random method example   // return a random number between 0 and 1  
+Math.random(); // return a random number between 0 and 1
+console.log(Math.random());
+
+// 2 floor method example   // return the largest integer less than or equal to a number
+Math.floor(4.9); // return the largest integer less than or equal to a number
+console.log(Math.floor(4.9));
+
+// 3 ceil method example   // return the smallest integer greater than or equal to a number
+Math.ceil(4.1); // return the smallest integer greater than or equal to a number
+console.log(Math.ceil(4.1));
+
+
+// 4 round method example   // return the nearest integer to a number
+Math.round(4.5); // return the nearest integer to a number
+console.log(Math.round(4.5));
+
+// 5 pow method example   // return the base to the exponent power
+Math.pow(2, 3); // return the base to the exponent power
+console.log(Math.pow(2, 3));
+
+// 6 sqrt method example   // return the square root of a number
+Math.sqrt(16); // return the square root of a number
+console.log(Math.sqrt(16));
+
+// 7 abs method example   // return the absolute value of a number
+Math.abs(-4); // return the absolute value of a number
+console.log(Math.abs(-4));
+
+// 8 max method example   // return the largest of zero or more numbers
+Math.max(1, 3, 2); // return the largest of zero or more numbers
+console.log(Math.max(1, 3, 2));
+
+
+// 9 min method example   // return the smallest of zero or more numbers
+Math.min(1, 3, 2); // return the smallest of zero or more numbers
+console.log(Math.min(1, 3, 2));
+
+
+// 10 sign method example   // return the sign of a number
+Math.sign(-4); // return the sign of a number
+console.log(Math.sign(-4));
+
+// 11 log method example   // return the natural logarithm of a number
+Math.log(16); // return the natural logarithm of a number
+console.log(Math.log(16));
+
+
+//
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////

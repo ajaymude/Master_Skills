@@ -1,0 +1,769 @@
+/* =========================================================
+   COMPLETE CSS MASTERY SYLLABUS
+   From Zero to Expert - All Topics Covered
+   ========================================================= */
+
+/* /////////////////////////////////////////////////////////////////////
+   1. INTRODUCTION TO CSS
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   What is CSS?
+     - Cascading Style Sheets
+     - Presentation layer of web
+     - CSS1, CSS2, CSS3
+   How CSS Works:
+     - Browser parsing
+     - CSSOM (CSS Object Model)
+     - Render tree
+   Ways to Add CSS:
+     - Inline (style attribute)
+     - Internal (<style> in head)
+     - External (<link> stylesheet)
+   CSS Syntax:
+     - Selector { property: value; }
+     - Comments: /* comment */
+/* */
+
+/* /////////////////////////////////////////////////////////////////////
+   2. SELECTORS
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Basic Selectors:
+     - Universal: *
+     - Element: div, p, h1
+     - Class: .classname
+     - ID: #idname
+   Attribute Selectors:
+     - [attr] (has attribute)
+     - [attr="value"] (exact match)
+     - [attr^="value"] (starts with)
+     - [attr$="value"] (ends with)
+     - [attr*="value"] (contains)
+     - [attr~="value"] (word match)
+     - [attr|="value"] (prefix match)
+   Combinators:
+     - Descendant: A B
+     - Child: A > B
+     - Adjacent Sibling: A + B
+     - General Sibling: A ~ B
+   Pseudo-Classes:
+     - :hover, :active, :focus, :visited
+     - :first-child, :last-child, :nth-child(n)
+     - :nth-of-type(n), :first-of-type, :last-of-type
+     - :not(), :is(), :where(), :has()
+     - :empty, :only-child, :only-of-type
+     - :checked, :disabled, :enabled, :required
+     - :focus-visible, :focus-within
+   Pseudo-Elements:
+     - ::before, ::after
+     - ::first-line, ::first-letter
+     - ::selection, ::placeholder
+     - ::marker (list bullets)
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   3. SPECIFICITY & CASCADE
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Specificity Calculation:
+     - Inline styles: 1000
+     - ID: 100
+     - Class/Attribute/Pseudo-class: 10
+     - Element/Pseudo-element: 1
+     - Universal (*): 0
+   Cascade Rules:
+     - Origin (user-agent, user, author)
+     - Specificity
+     - Source order
+   Important:
+     - !important keyword
+     - When to use (avoid if possible)
+   Inheritance:
+     - Inherited properties (color, font)
+     - Non-inherited properties (margin, padding)
+     - inherit, initial, unset, revert
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   4. BOX MODEL
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Box Components:
+     - Content (width, height)
+     - Padding (inner space)
+     - Border (edge)
+     - Margin (outer space)
+   Box Sizing:
+     - content-box (default)
+     - border-box (recommended)
+   Properties:
+     - width, height
+     - min-width, max-width
+     - min-height, max-height
+     - padding: top right bottom left
+     - margin: top right bottom left
+     - margin: auto (centering)
+   Margin Collapse:
+     - Vertical margins collapse
+     - Larger margin wins
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   5. DISPLAY PROPERTY
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Display Types:
+     - block (full width, new line)
+     - inline (content width, same line)
+     - inline-block (inline with box props)
+     - none (hidden, no space)
+     - flex (flexbox container)
+     - grid (grid container)
+     - inline-flex, inline-grid
+     - contents
+   Visibility:
+     - visibility: visible | hidden | collapse
+     - Difference: hidden keeps space
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   6. COLORS
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Color Formats:
+     - Named: red, blue, transparent
+     - Hexadecimal: #RGB, #RRGGBB, #RRGGBBAA
+     - RGB: rgb(255, 0, 0)
+     - RGBA: rgba(255, 0, 0, 0.5)
+     - HSL: hsl(0, 100%, 50%)
+     - HSLA: hsla(0, 100%, 50%, 0.5)
+     - HWB: hwb(0 0% 0%)
+     - LAB, LCH, OKLCH (modern)
+   Properties:
+     - color (text color)
+     - background-color
+     - border-color
+     - opacity (0-1)
+   currentColor:
+     - Inherits current text color
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   7. BACKGROUNDS
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Background Properties:
+     - background-color
+     - background-image: url(), linear-gradient(), radial-gradient()
+     - background-repeat: repeat, no-repeat, repeat-x, repeat-y
+     - background-position: top, center, 50% 50%
+     - background-size: cover, contain, 100px 100px
+     - background-attachment: scroll, fixed, local
+     - background-origin: border-box, padding-box, content-box
+     - background-clip: border-box, padding-box, content-box, text
+   Shorthand:
+     - background: color image repeat position/size attachment
+   Multiple Backgrounds:
+     - Comma-separated values
+   Gradients:
+     - linear-gradient(direction, colors)
+     - radial-gradient(shape, colors)
+     - conic-gradient(angle, colors)
+     - repeating-linear-gradient()
+     - repeating-radial-gradient()
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   8. BORDERS & OUTLINE
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Border Properties:
+     - border-width
+     - border-style: solid, dashed, dotted, double, none
+     - border-color
+     - border: width style color (shorthand)
+     - border-top, border-right, border-bottom, border-left
+   Border Radius:
+     - border-radius: all corners
+     - border-top-left-radius, etc.
+     - Elliptical: 10px / 20px
+   Border Image:
+     - border-image-source
+     - border-image-slice
+     - border-image-width
+     - border-image-outset
+     - border-image-repeat
+   Outline:
+     - outline: width style color
+     - outline-offset
+     - Doesn't affect layout
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   9. UNITS
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Absolute Units:
+     - px (pixels)
+     - pt (points)
+     - cm, mm, in
+   Relative Units:
+     - em (relative to parent font-size)
+     - rem (relative to root font-size)
+     - % (percentage of parent)
+     - vw (1% viewport width)
+     - vh (1% viewport height)
+     - vmin (smaller of vw/vh)
+     - vmax (larger of vw/vh)
+     - dvh, svh, lvh (dynamic/small/large viewport)
+     - ch (width of "0" character)
+     - ex (x-height of font)
+   CSS Functions:
+     - calc() - math operations
+     - min(), max(), clamp()
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   10. TYPOGRAPHY
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Font Properties:
+     - font-family: "Font Name", sans-serif
+     - font-size: px, em, rem, %
+     - font-weight: 100-900, normal, bold
+     - font-style: normal, italic, oblique
+     - font-variant: small-caps
+     - font-stretch
+   Font Shorthand:
+     - font: style variant weight size/line-height family
+   Text Properties:
+     - color
+     - text-align: left, center, right, justify
+     - text-decoration: underline, line-through, none
+     - text-transform: uppercase, lowercase, capitalize
+     - text-indent
+     - text-shadow: x y blur color
+     - letter-spacing, word-spacing
+     - white-space: normal, nowrap, pre, pre-wrap
+     - word-break, overflow-wrap
+     - text-overflow: ellipsis, clip
+   Line Height:
+     - line-height: number, px, em
+   Web Fonts:
+     - @font-face rule
+     - Google Fonts
+     - font-display: swap, fallback, optional
+   Variable Fonts:
+     - font-variation-settings
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   11. FLEXBOX
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Container Properties:
+     - display: flex | inline-flex
+     - flex-direction: row, column, row-reverse, column-reverse
+     - flex-wrap: nowrap, wrap, wrap-reverse
+     - flex-flow: direction wrap (shorthand)
+     - justify-content: flex-start, center, flex-end, space-between, space-around, space-evenly
+     - align-items: stretch, flex-start, center, flex-end, baseline
+     - align-content: (for multi-line)
+     - gap: row-gap column-gap
+   Item Properties:
+     - order: number
+     - flex-grow: number
+     - flex-shrink: number
+     - flex-basis: size
+     - flex: grow shrink basis (shorthand)
+     - align-self: override align-items
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   12. CSS GRID
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Container Properties:
+     - display: grid | inline-grid
+     - grid-template-columns: sizes
+     - grid-template-rows: sizes
+     - grid-template-areas: named areas
+     - gap / grid-gap: row-gap column-gap
+     - justify-items, align-items
+     - justify-content, align-content
+     - place-items, place-content
+   Item Properties:
+     - grid-column: start / end
+     - grid-row: start / end
+     - grid-area: name or row-start / col-start / row-end / col-end
+     - justify-self, align-self
+     - place-self
+   Grid Functions:
+     - repeat(count, size)
+     - minmax(min, max)
+     - fr unit (fraction)
+     - auto-fit, auto-fill
+   Named Lines & Areas:
+     - [line-name] in template
+     - grid-template-areas: "header header" "sidebar main"
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   13. POSITIONING
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Position Values:
+     - static (default, normal flow)
+     - relative (relative to self)
+     - absolute (relative to positioned ancestor)
+     - fixed (relative to viewport)
+     - sticky (hybrid relative/fixed)
+   Offset Properties:
+     - top, right, bottom, left
+     - inset: top right bottom left (shorthand)
+   Z-Index:
+     - Stacking order
+     - Stacking context
+   Containing Block:
+     - How position is calculated
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   14. TRANSFORMS
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   2D Transforms:
+     - translate(x, y), translateX(), translateY()
+     - rotate(angle)
+     - scale(x, y), scaleX(), scaleY()
+     - skew(x, y), skewX(), skewY()
+     - matrix(a, b, c, d, e, f)
+   3D Transforms:
+     - translate3d(x, y, z), translateZ()
+     - rotate3d(x, y, z, angle), rotateX(), rotateY(), rotateZ()
+     - scale3d(x, y, z), scaleZ()
+     - perspective(distance)
+     - matrix3d()
+   Transform Properties:
+     - transform: function(value)
+     - transform-origin: x y
+     - transform-style: flat, preserve-3d
+     - perspective (on parent)
+     - perspective-origin
+     - backface-visibility: visible, hidden
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   15. TRANSITIONS
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Transition Properties:
+     - transition-property: all, property-name
+     - transition-duration: time (s, ms)
+     - transition-timing-function: ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier()
+     - transition-delay: time
+   Shorthand:
+     - transition: property duration timing delay
+   Multiple Transitions:
+     - Comma-separated values
+   Performance:
+     - Use transform & opacity (GPU accelerated)
+     - Avoid transitioning layout properties
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   16. ANIMATIONS
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   @keyframes:
+     - @keyframes name { from {} to {} }
+     - @keyframes name { 0% {} 50% {} 100% {} }
+   Animation Properties:
+     - animation-name: keyframe-name
+     - animation-duration: time
+     - animation-timing-function: ease, linear, steps()
+     - animation-delay: time
+     - animation-iteration-count: number, infinite
+     - animation-direction: normal, reverse, alternate, alternate-reverse
+     - animation-fill-mode: none, forwards, backwards, both
+     - animation-play-state: running, paused
+   Shorthand:
+     - animation: name duration timing delay count direction fill-mode play-state
+   Performance:
+     - will-change property
+     - Use transform & opacity
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   17. FILTERS & EFFECTS
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Filter Property:
+     - blur(px)
+     - brightness(%)
+     - contrast(%)
+     - grayscale(%)
+     - hue-rotate(deg)
+     - invert(%)
+     - opacity(%)
+     - saturate(%)
+     - sepia(%)
+     - drop-shadow(x y blur color)
+   Backdrop Filter:
+     - backdrop-filter: blur(), etc.
+     - Glassmorphism effect
+   Mix Blend Mode:
+     - mix-blend-mode: multiply, screen, overlay, etc.
+   Background Blend Mode:
+     - background-blend-mode
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   18. OVERFLOW & CLIPPING
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Overflow:
+     - overflow: visible, hidden, scroll, auto
+     - overflow-x, overflow-y
+   Text Overflow:
+     - text-overflow: clip, ellipsis
+     - Requires: overflow: hidden, white-space: nowrap
+   Clip Path:
+     - clip-path: circle(), ellipse(), polygon(), inset()
+     - clip-path: url(#svg-clip)
+   Object Fit:
+     - object-fit: fill, contain, cover, none, scale-down
+     - object-position: x y
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   19. RESPONSIVE DESIGN
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Media Queries:
+     - @media screen and (condition) { }
+     - min-width, max-width
+     - min-height, max-height
+     - orientation: portrait, landscape
+     - prefers-color-scheme: dark, light
+     - prefers-reduced-motion
+   Breakpoints (common):
+     - Mobile: 320px - 480px
+     - Tablet: 481px - 768px
+     - Laptop: 769px - 1024px
+     - Desktop: 1025px+
+   Mobile First:
+     - Default styles for mobile
+     - Use min-width media queries
+   Container Queries:
+     - @container (width > 400px) { }
+     - container-type: inline-size
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   20. CSS VARIABLES (Custom Properties)
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Declaration:
+     - --variable-name: value;
+     - Usually in :root {}
+   Usage:
+     - var(--variable-name)
+     - var(--variable-name, fallback)
+   Scope:
+     - Global (:root)
+     - Local (any selector)
+   Dynamic Changes:
+     - JavaScript: element.style.setProperty('--var', 'value')
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   21. CSS FUNCTIONS
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Math Functions:
+     - calc(100% - 50px)
+     - min(100px, 50%)
+     - max(100px, 50%)
+     - clamp(min, preferred, max)
+   Color Functions:
+     - rgb(), rgba(), hsl(), hsla()
+     - color-mix() (modern)
+   Transform Functions:
+     - translate(), rotate(), scale(), etc.
+   Gradient Functions:
+     - linear-gradient(), radial-gradient()
+   Filter Functions:
+     - blur(), brightness(), etc.
+   Other:
+     - url()
+     - attr()
+     - counter()
+     - env() (for safe areas)
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   22. PSEUDO-CLASSES ADVANCED
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Form States:
+     - :valid, :invalid
+     - :required, :optional
+     - :in-range, :out-of-range
+     - :placeholder-shown
+     - :autofill
+     - :default
+     - :indeterminate
+   Structural:
+     - :root
+     - :empty
+     - :nth-child(odd/even/an+b)
+     - :nth-last-child()
+   Content:
+     - :target (URL fragment)
+     - :lang(en)
+   Modern:
+     - :is() (matches any)
+     - :where() (zero specificity)
+     - :has() (parent selector)
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   23. LAYOUT PATTERNS
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Common Layouts:
+     - Holy Grail Layout
+     - Sidebar + Main
+     - Card Grid
+     - Masonry (CSS only)
+     - Sticky Footer
+   Centering:
+     - Flexbox: justify-content + align-items
+     - Grid: place-items: center
+     - Position: top 50% + translate
+     - margin: auto
+   Aspect Ratio:
+     - aspect-ratio: 16 / 9
+     - Padding trick (legacy)
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   24. CSS RESET & NORMALIZE
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   CSS Reset:
+     - Remove all default styles
+     - Start from scratch
+   Normalize.css:
+     - Consistent defaults
+     - Browser bug fixes
+   Modern Reset:
+     - box-sizing: border-box
+     - margin: 0 on body
+     - img { max-width: 100% }
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   25. WRITING MODES & LOGICAL PROPERTIES
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Writing Mode:
+     - writing-mode: horizontal-tb, vertical-rl, vertical-lr
+     - direction: ltr, rtl
+   Logical Properties:
+     - margin-inline, margin-block
+     - padding-inline, padding-block
+     - border-inline, border-block
+     - inline-size (width), block-size (height)
+     - inset-inline, inset-block
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   26. SCROLLING & SCROLL BEHAVIOR
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Scroll Behavior:
+     - scroll-behavior: smooth, auto
+   Scroll Snap:
+     - scroll-snap-type: x mandatory, y proximity
+     - scroll-snap-align: start, center, end
+   Overscroll:
+     - overscroll-behavior: auto, contain, none
+   Scrollbar Styling:
+     - ::-webkit-scrollbar
+     - scrollbar-width: thin, none
+     - scrollbar-color: thumb track
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   27. @RULES
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Common At-Rules:
+     - @import (import stylesheets)
+     - @media (media queries)
+     - @font-face (custom fonts)
+     - @keyframes (animations)
+     - @supports (feature queries)
+     - @layer (cascade layers)
+     - @container (container queries)
+     - @property (custom property definition)
+   Feature Queries:
+     - @supports (display: grid) { }
+     - @supports not (display: grid) { }
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   28. SHADOWS
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Box Shadow:
+     - box-shadow: x y blur spread color
+     - box-shadow: inset x y blur spread color
+     - Multiple shadows (comma-separated)
+   Text Shadow:
+     - text-shadow: x y blur color
+   Drop Shadow Filter:
+     - filter: drop-shadow(x y blur color)
+     - Works on transparent images
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   29. PRINT STYLES
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Media Query:
+     - @media print { }
+   Properties:
+     - page-break-before, page-break-after
+     - page-break-inside: avoid
+     - orphans, widows
+   Best Practices:
+     - Remove backgrounds
+     - Show link URLs
+     - Adjust font sizes
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   30. CSS ARCHITECTURE
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Methodologies:
+     - BEM (Block Element Modifier)
+     - OOCSS (Object-Oriented CSS)
+     - SMACSS (Scalable and Modular)
+     - Atomic CSS
+     - Utility-First (Tailwind)
+   File Organization:
+     - Components
+     - Layouts
+     - Utilities
+     - Variables
+   Naming Conventions:
+     - BEM: .block__element--modifier
+     - Consistent, descriptive names
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   31. CSS PREPROCESSORS (Overview)
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   SASS/SCSS:
+     - Variables: $color
+     - Nesting
+     - Mixins
+     - Functions
+     - Extend/Inheritance
+   LESS:
+     - Similar features
+     - Different syntax
+   PostCSS:
+     - Plugin-based processing
+     - Autoprefixer
+     - cssnano (minification)
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   32. MODERN CSS FEATURES
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Container Queries:
+     - @container (min-width: 400px)
+     - container-type: inline-size
+   Cascade Layers:
+     - @layer reset, base, components, utilities
+   CSS Nesting:
+     - Native nesting support
+   :has() Selector:
+     - Parent selector
+   Subgrid:
+     - grid-template-columns: subgrid
+   Accent Color:
+     - accent-color: color
+   Color Functions:
+     - color-mix(), relative colors
+   View Transitions:
+     - view-transition-name
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   33. PERFORMANCE
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Best Practices:
+     - Minimize reflows & repaints
+     - Use transform & opacity for animations
+     - Avoid expensive selectors
+     - Reduce CSS file size
+   Optimization:
+     - Critical CSS (above the fold)
+     - CSS minification
+     - Remove unused CSS
+     - Lazy load non-critical CSS
+   Properties to Avoid Animating:
+     - width, height (use transform)
+     - top, left (use transform)
+     - margin, padding
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   34. DEBUGGING CSS
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Browser DevTools:
+     - Inspect element
+     - Computed styles
+     - Box model visualization
+     - Toggle states (:hover, etc.)
+   Techniques:
+     - outline: 1px solid red (debugging layouts)
+     - * { background: rgba(red, 0.1) }
+   Common Issues:
+     - Specificity conflicts
+     - Missing units
+     - Typos in property names
+     - Z-index stacking
+*/
+
+/* /////////////////////////////////////////////////////////////////////
+   35. BROWSER COMPATIBILITY
+   ///////////////////////////////////////////////////////////////////// */
+/*
+   Vendor Prefixes:
+     - -webkit- (Chrome, Safari)
+     - -moz- (Firefox)
+     - -ms- (IE/Edge legacy)
+   Autoprefixer:
+     - Automatic prefix addition
+   Feature Detection:
+     - @supports rule
+     - Modernizr (JS library)
+   Resources:
+     - Can I Use (caniuse.com)
+     - MDN Browser Compatibility
+*/
+
+/* =========================================================
+   END OF COMPLETE CSS MASTERY SYLLABUS
+   ========================================================= */

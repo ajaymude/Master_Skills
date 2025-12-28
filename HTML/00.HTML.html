@@ -1,0 +1,566 @@
+<!-- =========================================================
+     COMPLETE HTML MASTERY SYLLABUS
+     From Zero to Expert - All Topics Covered
+     ========================================================= -->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     1. INTRODUCTION TO HTML
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     What is HTML?
+       - HyperText Markup Language
+       - Structure of web pages
+       - HTML vs HTML5
+     How Web Works:
+       - Browser & Server
+       - HTTP/HTTPS
+       - Rendering process
+     Tools:
+       - Code editors (VS Code)
+       - Browser DevTools
+       - Live Server
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     2. HTML DOCUMENT STRUCTURE
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Basic Structure:
+       - <!DOCTYPE html>
+       - <html>
+       - <head>
+       - <body>
+     Head Elements:
+       - <title>
+       - <meta> (charset, viewport, description)
+       - <link> (stylesheets, favicon)
+       - <script>
+       - <style>
+       - <base>
+     Character Encoding:
+       - UTF-8
+       - Special characters
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     3. TEXT ELEMENTS
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Headings:
+       - <h1> to <h6>
+       - Hierarchy & SEO importance
+     Paragraphs:
+       - <p>
+       - <br> (line break)
+       - <hr> (horizontal rule)
+     Text Formatting:
+       - <strong> / <b> (bold)
+       - <em> / <i> (italic)
+       - <u> (underline)
+       - <s> / <del> (strikethrough)
+       - <mark> (highlight)
+       - <small> (small text)
+       - <sub> / <sup> (subscript/superscript)
+       - <ins> (inserted text)
+     Quotations:
+       - <blockquote>
+       - <q> (inline quote)
+       - <cite>
+       - <abbr> (abbreviation)
+     Preformatted:
+       - <pre>
+       - <code>
+       - <kbd> (keyboard input)
+       - <samp> (sample output)
+       - <var> (variable)
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     4. LISTS
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Unordered List:
+       - <ul>
+       - <li>
+       - list-style-type (CSS)
+     Ordered List:
+       - <ol>
+       - <li>
+       - type attribute (1, a, A, i, I)
+       - start, reversed attributes
+     Description List:
+       - <dl>
+       - <dt> (term)
+       - <dd> (description)
+     Nested Lists:
+       - Lists inside lists
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     5. LINKS & NAVIGATION
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Anchor Tag:
+       - <a href="">
+       - Absolute vs Relative URLs
+       - target="_blank" (new tab)
+       - target="_self" (same tab)
+     Link Types:
+       - External links
+       - Internal links
+       - Email links (mailto:)
+       - Phone links (tel:)
+       - Download links (download attribute)
+     Bookmark Links:
+       - id attribute
+       - href="#id"
+     Navigation:
+       - <nav>
+       - Skip links (accessibility)
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     6. IMAGES
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Image Tag:
+       - <img src="" alt="">
+       - src (source path)
+       - alt (alternative text - accessibility)
+       - width, height attributes
+       - loading="lazy"
+     Image Formats:
+       - JPEG, PNG, GIF, SVG, WebP, AVIF
+       - When to use each
+     Responsive Images:
+       - srcset attribute
+       - sizes attribute
+       - <picture> element
+       - <source>
+     Figure:
+       - <figure>
+       - <figcaption>
+     Image Maps:
+       - <map>
+       - <area>
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     7. TABLES
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Basic Structure:
+       - <table>
+       - <tr> (table row)
+       - <td> (table data)
+       - <th> (table header)
+     Table Sections:
+       - <thead>
+       - <tbody>
+       - <tfoot>
+     Table Features:
+       - <caption>
+       - colspan attribute
+       - rowspan attribute
+       - scope attribute (accessibility)
+     Table Styling:
+       - border attribute (deprecated, use CSS)
+       - Responsive tables
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     8. FORMS
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Form Element:
+       - <form>
+       - action attribute (URL)
+       - method (GET, POST)
+       - enctype (multipart/form-data)
+       - novalidate
+     Input Types:
+       - text, password, email, number
+       - tel, url, search
+       - date, time, datetime-local
+       - month, week
+       - color, range
+       - file, hidden
+       - checkbox, radio
+       - submit, reset, button
+     Input Attributes:
+       - name, value, id
+       - placeholder
+       - required, disabled, readonly
+       - min, max, minlength, maxlength
+       - pattern (regex)
+       - autocomplete
+       - autofocus
+       - multiple
+       - accept (for file)
+     Other Form Elements:
+       - <textarea>
+       - <select> & <option> & <optgroup>
+       - <button>
+       - <label> (for attribute)
+       - <fieldset> & <legend>
+       - <datalist>
+       - <output>
+       - <progress>
+       - <meter>
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     9. SEMANTIC HTML
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Page Structure:
+       - <header>
+       - <nav>
+       - <main>
+       - <footer>
+     Content Sections:
+       - <section>
+       - <article>
+       - <aside>
+     Other Semantic Elements:
+       - <figure> & <figcaption>
+       - <details> & <summary>
+       - <time> (datetime attribute)
+       - <address>
+       - <mark>
+     Why Semantic HTML?
+       - SEO benefits
+       - Accessibility
+       - Code readability
+       - Screen readers
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     10. MULTIMEDIA
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Audio:
+       - <audio>
+       - src, controls
+       - autoplay, loop, muted
+       - preload (none, metadata, auto)
+       - <source> for formats
+     Video:
+       - <video>
+       - src, controls
+       - width, height, poster
+       - autoplay, loop, muted
+       - playsinline
+       - <source> for formats
+       - <track> for subtitles (VTT)
+     Embedding:
+       - <iframe>
+       - src, width, height
+       - sandbox attribute
+       - allow attribute
+       - loading="lazy"
+       - YouTube, Maps embedding
+     Object & Embed:
+       - <object>
+       - <embed>
+       - <param>
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     11. GLOBAL ATTRIBUTES
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Common Attributes:
+       - id (unique identifier)
+       - class (CSS classes)
+       - style (inline CSS)
+       - title (tooltip)
+       - lang (language)
+       - dir (text direction)
+     Data Attributes:
+       - data-* (custom data)
+       - Accessing via JavaScript
+     Interactive:
+       - tabindex
+       - accesskey
+       - contenteditable
+       - draggable
+       - hidden
+       - spellcheck
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     12. META TAGS & SEO
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Essential Meta Tags:
+       - charset="UTF-8"
+       - viewport (responsive)
+       - description
+       - keywords (less important now)
+       - author
+       - robots (index, noindex)
+     Open Graph (Social Media):
+       - og:title
+       - og:description
+       - og:image
+       - og:url
+       - og:type
+     Twitter Cards:
+       - twitter:card
+       - twitter:title
+       - twitter:description
+       - twitter:image
+     Favicon:
+       - <link rel="icon">
+       - Different sizes
+       - Apple touch icon
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     13. HTML5 APIs (Overview)
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Storage:
+       - localStorage
+       - sessionStorage
+     Graphics:
+       - <canvas>
+       - <svg>
+     Geolocation API
+     Drag & Drop API
+     Web Workers
+     History API
+     WebSocket
+     Notifications API
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     14. CANVAS
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Canvas Element:
+       - <canvas id="" width="" height="">
+       - getContext("2d")
+     Drawing:
+       - fillRect(), strokeRect()
+       - arc(), lineTo(), moveTo()
+       - fillText(), strokeText()
+       - drawImage()
+     Styling:
+       - fillStyle, strokeStyle
+       - lineWidth
+       - Gradients
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     15. SVG (Scalable Vector Graphics)
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Inline SVG:
+       - <svg>
+       - <rect>, <circle>, <ellipse>
+       - <line>, <polyline>, <polygon>
+       - <path>
+       - <text>
+     SVG Attributes:
+       - width, height, viewBox
+       - fill, stroke, stroke-width
+     External SVG:
+       - <img src="image.svg">
+       - CSS background
+       - <object>
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     16. ACCESSIBILITY (a11y)
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     ARIA Roles:
+       - role="navigation"
+       - role="main"
+       - role="button"
+       - role="alert"
+     ARIA Attributes:
+       - aria-label
+       - aria-labelledby
+       - aria-describedby
+       - aria-hidden
+       - aria-expanded
+       - aria-required
+       - aria-live (for dynamic content)
+     Best Practices:
+       - Alt text for images
+       - Form labels
+       - Proper heading hierarchy
+       - Keyboard navigation
+       - Focus management
+       - Skip links
+       - Color contrast
+       - Screen reader testing
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     17. RESPONSIVE DESIGN (HTML Part)
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Viewport Meta Tag:
+       - <meta name="viewport" content="width=device-width, initial-scale=1">
+     Responsive Images:
+       - srcset
+       - sizes
+       - <picture> element
+     Responsive Tables:
+       - Scrollable wrapper
+       - Stack on mobile
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     18. HTML ENTITIES
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Common Entities:
+       - &nbsp; (non-breaking space)
+       - &lt; (<)
+       - &gt; (>)
+       - &amp; (&)
+       - &quot; (")
+       - &apos; (')
+       - &copy; (©)
+       - &reg; (®)
+       - &trade; (™)
+       - &euro; (€)
+       - &pound; (£)
+       - &yen; (¥)
+       - &rupee; (₹)
+     Numeric Entities:
+       - &#60; (< by number)
+       - &#x003C; (hex)
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     19. HTML COMMENTS
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Syntax:
+       - <!-- comment here -- >
+     Use Cases:
+       - Code documentation
+       - Temporarily hide code
+       - Conditional comments (IE legacy)
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     20. DEPRECATED & OBSOLETE ELEMENTS
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Avoid Using:
+       - <font> (use CSS)
+       - <center> (use CSS)
+       - <marquee> (use CSS animations)
+       - <blink>
+       - <frame>, <frameset>
+       - <big>
+       - <strike> (use <del> or <s>)
+       - align attribute (use CSS)
+       - bgcolor attribute (use CSS)
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     21. HTML VALIDATION
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     W3C Validator:
+       - https://validator.w3.org/
+     Common Errors:
+       - Missing alt attributes
+       - Unclosed tags
+       - Invalid nesting
+       - Missing DOCTYPE
+       - Duplicate IDs
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     22. BEST PRACTICES
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Code Quality:
+       - Proper indentation
+       - Lowercase tags & attributes
+       - Quote attribute values
+       - Close all tags
+       - Use semantic elements
+     SEO:
+       - Proper heading hierarchy
+       - Descriptive title & meta
+       - Alt text for images
+       - Clean URLs
+     Performance:
+       - Minimize HTTP requests
+       - Lazy load images
+       - Async/defer scripts
+       - Minimize HTML size
+     Accessibility:
+       - All images have alt
+       - Forms have labels
+       - Use ARIA when needed
+       - Test with screen readers
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     23. HTML5 FEATURES SUMMARY
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     New Elements:
+       - Semantic: header, nav, main, footer, article, section, aside
+       - Multimedia: audio, video
+       - Graphics: canvas, svg
+       - Forms: datalist, output, progress, meter
+     New Input Types:
+       - email, url, tel, number, range
+       - date, time, color, search
+     New Attributes:
+       - placeholder, required, autofocus
+       - pattern, multiple
+       - data-*
+     APIs:
+       - Geolocation, Storage, Canvas
+       - Drag & Drop, History
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     24. BROWSER COMPATIBILITY
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     Cross-Browser Testing:
+       - Chrome, Firefox, Safari, Edge
+       - Mobile browsers
+     Polyfills & Fallbacks:
+       - HTML5 Shiv (for older IE)
+       - Feature detection
+     Can I Use:
+       - https://caniuse.com/
+-->
+
+<!-- /////////////////////////////////////////////////////////////////////
+     25. HTML INTEGRATION
+     ///////////////////////////////////////////////////////////////////// -->
+<!--
+     With CSS:
+       - External: <link rel="stylesheet">
+       - Internal: <style>
+       - Inline: style attribute
+     With JavaScript:
+       - External: <script src="">
+       - Internal: <script>
+       - defer & async attributes
+       - Event attributes (onclick, etc.)
+     With Backend:
+       - Template engines
+       - Server-side rendering
+       - Form submissions
+-->
+
+<!-- =========================================================
+     END OF COMPLETE HTML MASTERY SYLLABUS
+     ========================================================= -->
