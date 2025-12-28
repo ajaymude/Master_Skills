@@ -24,7 +24,7 @@ greet("John");
 
 
 // function expression example
-const greet = function(name) {
+const greet = function (name) {
   console.log("Hello, " + name);
 }
 greet("John");
@@ -129,5 +129,45 @@ const person3 = { name: "John", age: 30, city: "New York" };
 console.log(person3.greet("Hello, " + person3.name));
 // output: Hello, John
 
+/* =========================================================
+// Operator in the javascript
+   ========================================================= */
 
+// arithmatic operator example
+console.log(1 + 2); // output: 3
+console.log(1 - 2); // output: -1
+console.log(1 * 2); // output: 2
+console.log(1 / 2); // output: 0.5
+console.log(1 % 2); // output: 1
+
+// comparison operator example
+console.log(1 == 2); // output: false
+console.log(1 === 2); // output: false
+console.log(1 != 2); // output: true
+console.log(1 !== 2); // output: true
+console.log(1 > 2); // output: false
+console.log(1 < 2); // output: true
+console.log(1 >= 2); // output: false
+console.log(1 <= 2); // output: true
+
+// logical operator example
+console.log(true && false); // output: false
+console.log(true || false); // output: true
+console.log(!true); // output: false
+
+
+// assignment operator example
+let a = 1;
+a += 2; // a = a + 2
+console.log(a); // output: 3
+
+// increment operator example
+let b = 1;
+b++;
+console.log(b); // output: 2
+
+// decrement operator example
+let c = 2;
+c--;
+console.log(c); // output: 1
 
