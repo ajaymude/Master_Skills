@@ -25,6 +25,9 @@ let count = 10;
 // what is the array type?
 // An array type is a type that represents an array of values of a specific type.
 
+// what is the tuple type?
+// A tuple type is a type that represents an array of values of different types.
+
 let numbers: number[] = [1, 2, 3];
 let names: Array<string> = ["Ajay", "Rahul"];
 let mixedArr: (number | string)[] = [1, "two"];

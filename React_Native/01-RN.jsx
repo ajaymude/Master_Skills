@@ -75,10 +75,46 @@
   <SafeAreaView style={{ flex: 1 }} >Hello World</SafeAreaView>
 
   // FlatList is a component that displays a list of items
-  <FlatList>Hello World</FlatList>
+  <FlatList
+    // horizontal={true}
+    // showsHorizontalScrollIndicator={false}
+    // contentContainerStyle={{ flexDirection: "row" }}
+    // vertical={true}
+    // showsVerticalScrollIndicator={false}
+    // style={{ flex: 1 }}
+    // onScroll={() => {
+    //   console.log("Scroll");
+    // }}
+    // onScrollEndDrag={() => {
+    //   console.log("Scroll end drag");
+    // }}
+    // onScrollBeginDrag={() => {
+    //   console.log("Scroll begin drag");
+    // }}
+    // onMomentumScrollEnd={() => {
+    //   console.log("Momentum scroll end");
+    // }}
+    // onMomentumScrollBegin={() => {
+    //   console.log("Momentum scroll begin");
+    // }}
+    data={[
+      { id: 1, name: "John" },
+      { id: 2, name: "Jane" },
+      { id: 3, name: "Jim" },
+      { id: 4, name: "Jill" },
+    ]}
+    renderItem={({ item }) => <Text>{item.name}</Text>}
+  />
 
   // SectionList is a component that displays a list of items in sections
-  <SectionList>Hello World</SectionList>
+  <SectionList
+    sections={[
+      { title: "Section 1", data: ["Item 1", "Item 2", "Item 3"] },
+      { title: "Section 2", data: ["Item 4", "Item 5", "Item 6"] },
+    ]}
+    renderItem={({ item }) => <Text>{item}</Text>}
+    renderSectionHeader={({ section }) => <Text>{section.title}</Text>}
+  />
 
   // TextInput is a component that allows the user to enter text
   <TextInput
