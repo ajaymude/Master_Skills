@@ -1,46 +1,4 @@
 //==================================================================================
-// basic of the linux commands
-//==================================================================================
-// ls - list directory contents
-// cd - change directory
-// pwd - print working directory
-// mkdir - make directory
-// rm - remove file or directory
-// cp - copy file or directory
-// mv - move file or directory
-// ln - create link
-// chmod - change file or directory permissions
-// chown - change file or directory owner
-// chgrp - change file or directory group
-// cat - display file content
-// more - display file content page by page
-
-
-
-
-// how to install linux in windows
-
-// how to install linux on cloud server
-
-// oracle virtualbox installation
-// vmware workstation installation
-
-
-
-
-
-//==================================================================================
-// Networking , 
-//==================================================================================
-
-
-
-// client and server 
-
-
-
-
-//==================================================================================
 //==================================================================================
 
 ====================================================
@@ -251,6 +209,260 @@ END OF MODULE 3 NOTES
 
 //==================================================================================
 //==================================================================================
+
+====================================================
+MODULE 4: LINUX COMMANDS, PERMISSIONS & TEXT PROCESSING
+====================================================
+
+----------------------------------------------------
+1) LINUX COMMAND SYNTAX
+----------------------------------------------------
+General Syntax:
+command [options] [arguments]
+
+Example:
+ls -l /home
+
+----------------------------------------------------
+2) FILE & DIRECTORY PERMISSIONS (chmod)
+----------------------------------------------------
+Permission Types:
+r -> read
+w -> write
+x -> execute
+
+Applies to:
+- User (owner)
+- Group
+- Others
+
+Symbolic Mode:
+chmod u+x file
+chmod g-w file
+chmod o+r file
+
+----------------------------------------------------
+3) FILE PERMISSIONS – NUMERIC MODE
+----------------------------------------------------
+Permission Values:
+r = 4
+w = 2
+x = 1
+
+Examples:
+chmod 777 file   -> Full permission
+chmod 755 file   -> rwxr-xr-x
+chmod 644 file   -> rw-r--r--
+
+----------------------------------------------------
+4) FILE OWNERSHIP COMMANDS
+----------------------------------------------------
+Changechown (change owner):
+chown user file
+
+Change owner & group:
+chown user:group file
+
+chgrp (change group):
+chgrp group file
+
+----------------------------------------------------
+5) ACCESS CONTROL LIST (ACL)
+----------------------------------------------------
+Used for fine-grained permissions
+
+Set ACL:
+setfacl -m u:username:rwx file
+
+View ACL:
+getfacl file
+
+----------------------------------------------------
+6) HELP COMMANDS
+----------------------------------------------------
+command --help
+man command
+info command
+
+----------------------------------------------------
+7) TAB COMPLETION & COMMAND HISTORY
+----------------------------------------------------
+TAB key:
+- Auto-complete commands & file names
+
+Up Arrow:
+- View previous commands
+
+----------------------------------------------------
+8) ADDING TEXT TO FILES
+----------------------------------------------------
+Using echo:
+echo "Hello" > file.txt
+echo "World" >> file.txt
+
+Using cat:
+cat > file.txt
+(Type text then Ctrl+D)
+
+----------------------------------------------------
+9) INPUT & OUTPUT REDIRECTION
+----------------------------------------------------
+>   -> Output overwrite
+>>  -> Output append
+<   -> Input redirect
+
+stdin  -> 0
+stdout -> 1
+stderr -> 2
+
+Examples:
+ls > output.txt
+ls >> output.txt
+command 2> error.txt
+
+----------------------------------------------------
+10) TEE COMMAND
+----------------------------------------------------
+Writes output to file & screen
+
+Example:
+ls | tee file.txt
+ls | tee -a file.txt
+
+----------------------------------------------------
+11) PIPES ( | )
+----------------------------------------------------
+Pass output of one command to another
+
+Example:
+ls | grep txt
+ps aux | grep root
+
+----------------------------------------------------
+12) EXECUTING MULTIPLE COMMANDS
+----------------------------------------------------
+;   -> Run commands sequentially
+&&  -> Run next if previous succeeds
+||  -> Run next if previous fails
+
+Examples:
+mkdir test && cd test
+rm file || echo "Delete failed"
+
+----------------------------------------------------
+13) FILE MAINTENANCE COMMANDS
+----------------------------------------------------
+cp     -> Copy files
+mv     -> Move/Rename
+rm     -> Remove files
+mkdir  -> Create directory
+rmdir  -> Remove empty directory
+
+----------------------------------------------------
+14) FILE DISPLAY COMMANDS
+----------------------------------------------------
+cat   -> Display entire file
+less  -> Scrollable view
+more  -> Page by page
+head  -> First 10 lines
+tail  -> Last 10 lines
+tail -f -> Live log view
+
+----------------------------------------------------
+15) TEXT PROCESSING / FILTER COMMANDS
+----------------------------------------------------
+Used to process text data & logs
+
+----------------------------------------------------
+16) CUT COMMAND
+----------------------------------------------------
+Extract columns
+
+Example:
+cut -d: -f1 /etc/passwd
+
+----------------------------------------------------
+17) AWK COMMAND
+----------------------------------------------------
+Pattern scanning & processing
+
+Example:
+awk '{print $1,$3}' file.txt
+
+----------------------------------------------------
+18) GREP / EGREP
+----------------------------------------------------
+Search text patterns
+
+Examples:
+grep "error" file.txt
+grep -i "error" file.txt
+egrep "error|fail" file.txt
+
+----------------------------------------------------
+19) SORT & UNIQ
+----------------------------------------------------
+sort file.txt
+sort -r file.txt
+uniq file.txt
+sort file.txt | uniq
+
+----------------------------------------------------
+20) COMPARE FILES
+----------------------------------------------------
+diff file1 file2
+cmp file1 file2
+
+----------------------------------------------------
+21) WC COMMAND
+----------------------------------------------------
+Count lines, words, characters
+
+wc file.txt
+wc -l file.txt
+wc -w file.txt
+
+----------------------------------------------------
+22) COMPRESS & UNCOMPRESS FILES
+----------------------------------------------------
+tar:
+tar -cvf file.tar folder
+tar -xvf file.tar
+
+gzip:
+gzip file
+gunzip file.gz
+
+----------------------------------------------------
+23) TRUNCATE FILE SIZE
+----------------------------------------------------
+truncate -s 0 file.txt
+truncate -s 10M file.txt
+
+----------------------------------------------------
+24) COMBINING & SPLITTING FILES
+----------------------------------------------------
+Combine:
+cat file1 file2 > combined.txt
+
+Split:
+split -l 100 file.txt
+
+----------------------------------------------------
+25) LINUX VS WINDOWS COMMANDS
+----------------------------------------------------
+ls    -> dir
+cp    -> copy
+rm    -> del
+mv    -> move
+cat   -> type
+pwd   -> cd
+
+----------------------------------------------------
+END OF MODULE 4 NOTES
+====================================================
+
+
 //==================================================================================
 //==================================================================================
 //==================================================================================
